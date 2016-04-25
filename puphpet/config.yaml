@@ -100,7 +100,13 @@ locale:
         timezone: UTC
 firewall:
     install: '1'
-    rules: {  }
+    rules:
+        fr_dbygzb2hevp5:
+            port:
+                - '3306'
+            priority: '10'
+            proto: tcp
+            action: accept
 cron:
     install: '1'
     jobs: {  }
